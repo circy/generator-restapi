@@ -1,7 +1,5 @@
-# generator-restapi [![Build Status](https://secure.travis-ci.org/circy/generator-restapi.png?branch=master)](https://travis-ci.org/circy/generator-restapi)
-
-> [Yeoman](http://yeoman.io) generator
-
+# generator-restapi
+A small but nice generator. For express and MongoDB. He is well suited fo Restfull Api projects.
 
 ## Getting Started
 
@@ -35,13 +33,11 @@ Finally, initiate the generator:
 yo restapi
 ```
 
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
+```bash
+yo restapi:RouteName
+```
 
 ## License
+Sebastian Kreissl (c) 2015
 
 MIT
