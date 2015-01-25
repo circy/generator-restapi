@@ -23,6 +23,7 @@ Finally, initiate the generator:
 ```bash
 yo restapi
 ```
+To add a route to the Customize Project. execute them this command
 
 ```bash
 yo restapi:RouteName
