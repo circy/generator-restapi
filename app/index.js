@@ -54,8 +54,8 @@ module.exports = yeoman.generators.Base.extend({
       }
       ,{
         type: 'confirm',
-        name: 'grunt',
-        message: 'Do you use grunt for automatik restart after data access?',
+        name: 'cors',
+        message: 'Do you use cors?',
         default: true
       }
     ];
@@ -64,7 +64,7 @@ module.exports = yeoman.generators.Base.extend({
       this.appName = props.appName;
       this.mongo = props.mongo;
       this.jwt = props.jwt;
-      this.grunt = props.grunt;
+      this.cors = props.cors;
       this.developer = props.developer;
       done();
     }.bind(this));
@@ -78,17 +78,9 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   copyMainFiles: function(){
-
-    if(this.grunt) this.copy("_Gruntfile.js", "Gruntfile.js");
-
-    var context = {
-      appName: this.appName,
-      mongo: this.mongo,
-      jwt: this.jwt,
-      grunt: this.grunt
-    };
-
-    this.template("_package.json", "package.json", context);
+    this.template("_package.json", "package.json");
+    this.template("_app.js", "app.js");
+    this.copy('_.gitignore', '.gitignore');
   },
 
   install: function () {
