@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded());
 
 <% if (jwt == true) { %>app.use('/api', expressJwt({secret: "xxxx-xxxxx-xxxxx-xxx"}));<% } %>
 
-app.use('/api/user/', require('./router/apiUser'));
+//--Routes will be added automatically--
+
 
 app.use(function(err, req, res, next) {
   console.error(err.stack);
