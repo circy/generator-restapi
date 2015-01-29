@@ -1,3 +1,8 @@
+/*
+           MIT License http://www.opensource.org/licenses/mit-license.php
+           Author & (c) 2015 Sebastian Kreissl
+           https://github.com/circy
+ */
 'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
