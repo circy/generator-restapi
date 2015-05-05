@@ -29,7 +29,7 @@ module.exports = yeoman.generators.Base.extend({
     '$$    $$  $$$$$$$ $$$$$$$     $$$$  $$    $$ $$       $$$$$$\n'
     ));
 
-    console.log('Created by ' + chalk.bold.green('@circy (Sebastian Kreissl)') + '\n\n');
+    console.log('Created by ' + chalk.bold.green('@circyde (Sebastian Kreissl)') + '\n\n');
     console.log('http://github.com/circy/\n\n\n');
 
     var prompts = [
