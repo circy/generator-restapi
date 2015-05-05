@@ -1,4 +1,4 @@
-require('../models/<%= name %>');
+require('../model/<%= name %>');
 var mongoose = require('mongoose');
 var <%= name %> = mongoose.model('<%= name %>');
 

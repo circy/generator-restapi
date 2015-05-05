@@ -7,7 +7,7 @@ var <%= name %>Schema = new schema({
         type: String,
         unique: true
     },
-    createt: {
+    created: {
         type: Date,
         default: Date.now
     }

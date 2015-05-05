@@ -24,7 +24,7 @@ module.exports = yeoman.generators.Base.extend({
     try{
       var path = 'app.js',
         file = this.readFileAsString(path);
-      file = file.replace('//--Routes will be added automatically--','//--Routes will be added automatically--\napp.use(\'/api/' + this.name + '/\', require(\'./router/' + this.name + '\'));\n');
+      file = file.replace('//--Routes will be added automatically--','//--Routes will be added automatically--\napp.use(\'/api/' + this.name + '/\', require(\'./app/router/' + this.name + '\'));\n');
       this.write(path, file);
     }catch (err){
       this.log('The route could not be added to the file.');
