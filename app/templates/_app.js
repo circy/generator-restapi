@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-<% if (cors == true) { %>var cors = require('corse');<% } %>
+<% if (cors == true) { %>var cors = require('cors');<% } %>
 <% if (jwt == true) { %>var expressJwt = require('express-jwt');<% } %>
 <% if (jwt == true) { %>var jwt = require('jsonwebtoken');<% } %>
 <% if (mongo == true) { %>var mongoose = require('mongoose');
